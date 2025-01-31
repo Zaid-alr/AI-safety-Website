@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safety and Behavioral Patterns</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Safety and Behavioral Patterns</h1>
+        <p>By [Your Name]</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="table-of-contents.html">Table of Contents</a>
+        <a href="page1.html">AI Introduction</a>
+        <a href="page2.html">Behavioral Patterns</a>
+        <a href="page3.html">AI Misinformation</a>
+        <a href="page4.html">Safe AI Usage</a>
+        <a href="page5.html">Ethics of AI</a>
+        <a href="page6.html">AI Bot</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to AI Safety and Behavioral Patterns</h2>
+        <p>This website provides information about AI, its behavioral patterns, misinformation risks, and how to use AI safely based on research findings.</p>
+    </div>
+    
+    <div class="container">
+        <h2>AI Introduction</h2>
+        <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that can perform tasks such as learning, problem-solving, and decision-making.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Behavioral Patterns of AI</h2>
+        <p>AI operates based on patterns derived from training data. It can exhibit biases, errors, and unexpected behaviors based on its programming and input data.</p>
+    </div>
+    
+    <div class="container">
+        <h2>AI Misinformation</h2>
+        <p>AI can spread misinformation due to biased data sources, algorithmic errors, or intentional manipulation. Users must verify AI-generated information with credible sources.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Safe AI Usage</h2>
+        <p>To use AI safely, users should verify sources, understand AI biases, and avoid over-reliance on AI for critical decisions.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Ethics of AI</h2>
+        <p>AI ethics involve considerations about fairness, accountability, transparency, and privacy when developing and using AI technologies.</p>
+    </div>
+    
+    <div class="container">
+        <h2>AI Chatbot</h2>
+        <p>Ask simple AI-related questions below:</p>
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="answerQuestion()">Submit</button>
+        <p id="response"></p>
+    </div>
+
+
+    <script>
+        function answerQuestion() {
+            let input = document.getElementById("userInput").value.toLowerCase();
+            let response = "I don't understand that question.";
+            
+            if (input.includes("ai")) {
+                response = "AI stands for Artificial Intelligence, a field of computer science focused on creating smart machines.";
+            } else if (input.includes("safe use")) {
+                response = "To use AI safely, always verify sources and be aware of biases in AI-generated content.";
+            }
+            
+            document.getElementById("response").innerText = response;
+        }
+    </script>
+</body>
+</html>
